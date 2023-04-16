@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section">
+        <header class="section-header">Our Services</header>
+        <div class="wrapper">
+            <div class="card" style="width:47.5rem;height:15rem">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" alt="photo">
+                <div class="name">HTML 5</div>
+                <div class="content"><h1>HyperText Markup Language (HTML) is the basic scripting language used by web browsers to render pages on the world wide web.</h1></div>
+                <button onclick="window.location.href = 'https://www.w3schools.com/html/';">Read More</button>
+            </div>
+            <div class="card">
+                <img src="https://quocent.com/QUOCENT-CMS/userfiles/StaticBanner/1529923467_Javascript.png" alt="photo">
+                <div class="name">JAVASCRIPT</div>
+                <div class="content"><h1>JavaScript is the world's most popular programming language.JavaScript is the programming language of the Web.</h1></div>
+                <button onclick="window.location.href = 'https://www.w3schools.com/js/DEFAULT.asp';">Read More</button>
+            </div>
+            <div class="card">
+                <img src="https://www.techdevl.com/staff/css/img/imglogo.png" alt="photo">
+                <div class="name">CSS 5</div>
+                <div class="content"><h1>CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed.</h1></div>
+                <button onclick="window.location.href = 'https://www.w3schools.com/css/';">Read More</button>
+            </div>
+            <div class="card">
+                <img src="https://www.freecodecamp.org/news/content/images/2022/04/sass-image.png" alt="photo">
+                <div class="name">SASS</div>
+                <div class="content"><h1>Sass is a CSS pre-processor.Sass reduces repetition of CSS and therefore saves time.</h1></div>
+                <button onclick="window.location.href = 'https://www.w3schools.com/sass/';">Read More</button>
+            </div>
+            <div class="card">
+                <img src="https://technokrats.in/wp-content/uploads/2020/11/Content1-7.png" alt="photo">
+                <div class="name">JQUERY</div>
+                <div class="content"><h1>jQuery is a JavaScript Library.jQuery greatly simplifies JavaScript programming.</h1></div>
+                <button onclick="window.location.href = 'https://www.w3schools.com/jquery/';">Read More</button>
+            </div>
+            <div class="card">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" alt="photo">
+                <div class="name">REACT</div>
+                <div class="content"><h1>React is a JavaScript library for building user interfaces.React is used to build single-page applications.</h1></div>
+                <button onclick="window.location.href = 'https://www.w3schools.com/react/';">Read More</button>
+            </div>
+        </div>
+        <script>
+            const names = document.getElementsByClassName("card");
+            let names_value = []
+            let name = []
+            for(let i=0;i<names.length-1;i++){
+               names_value.push(names[i].getElementsByClassName("name"));
+            }
+            for(let i=0;i<names_value.length;i++){
+                name.push(names_value[i].item(0).innerHTML)
+            }
+            name.
+        </script>
+    </div>
+</body>
+</html>
